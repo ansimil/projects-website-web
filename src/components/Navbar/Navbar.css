@@ -1,0 +1,73 @@
+
+
+.navbarContainer {
+    position: fixed;
+    top: 0;
+    z-index: 9999;
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    min-height: 5rem;
+    max-height: 5rem;
+    width: 100vw;
+    box-shadow: rgb(0, 0, 0) 0px 0px 10px 0px;
+}
+
+.navbarContainer::after {
+    content: "";
+    background-image: url('../../../public/Knobs_Kesselhaus_BW.jpg');
+    opacity: 0.4;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;   
+  }
+
+.navbarHeader {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    height: 100%;
+}
+
+.navbarHeader h2 {
+    position: relative;
+    left: 5vw;
+    border: black solid 1px;
+    padding: 0.5em 0.7em 0.5em 0.7em
+}
+
+.navbarLinks {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-grow: 1;
+    height: 100%
+}
+
+.navbarLinks a {
+    font-size: 1.25rem;
+    text-decoration: none;
+    color: black;
+    border: solid transparent 1px;
+    padding: 0.7em 0.9em 0.7em 0.9em
+}
+
+.listContainer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-grow: 1;
+    height: 100%;
+    list-style: none;
+}
+
+.navbarLinks a:hover {
+    background-color: rgb(253, 241, 241);
+}
+
+.navbarLinks li {
+    flex-grow: 1;
+}

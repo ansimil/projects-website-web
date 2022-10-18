@@ -1,0 +1,7 @@
+.projectCardContainer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100vw;
+    flex-grow: 1
+}
