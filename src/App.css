@@ -1,1 +1,23 @@
+@font-face {
+  font-family: mainFont;
+  src: url('../public/louis_george_caf/Louis\ George\ Cafe.ttf');
+}
 
+/* @font-face {
+  font-family: mainFontBold;
+  src: url('../public/comfortaa/Comfortaa-Bold.ttf');
+} */
+
+.App {
+  position: relative;
+  top: 5rem;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+h1, h2, h3, p {
+  font-family: mainFont;
+}

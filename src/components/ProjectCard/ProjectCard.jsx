@@ -4,18 +4,24 @@ import projects from '../../projects.json'
 
 const ProjectCard = () => {
   return (
-        <div className='projectCardContainer'>
-            {projects.map((project, i) => {
-                console.log(project)
-                return (
-                    <div key={i}>
-                    <p>{project.title}</p>
-                    <p>{project.img}</p>
-                    <p>{project.description}</p>
-                    </div>
-                ) 
-            })}
-        </div>
+        <section className='projectCardContainer'>
+            <div>
+                <h1>projects</h1>
+            </div>
+            <div className='projectInnerContainer'>
+                {projects.map((project, i) => {
+                    console.log(project)
+                    return (
+                        <div className='projectContainer' key={i}>
+                        <h3>{project.title}</h3>
+                        <img src={project.img} alt="Project pic" height='200px' />
+                        <p>{project.description}</p>
+                        <p>{project.link}</p>
+                        </div>
+                    ) 
+                })}
+            </div>    
+        </section>
   )
 }
 

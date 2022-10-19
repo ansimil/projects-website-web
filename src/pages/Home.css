@@ -1,9 +1,0 @@
-.homeContainer {
-    position: relative;
-    top: 5rem;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-}
