@@ -4,13 +4,12 @@ import projects from '../../projects.json'
 
 const ProjectCard = () => {
   return (
-        <section className='projectCardContainer'>
+        <section id='projects' className='projectCardContainer'>
             <div>
                 <h1>projects</h1>
             </div>
             <div className='projectInnerContainer'>
                 {projects.map((project, i) => {
-                    console.log(project)
                     return (
                         <div className='projectContainer' key={i}>
                         <h3>{project.title}</h3>

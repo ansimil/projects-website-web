@@ -11,9 +11,9 @@ const Navbar = () => {
 
         <div className='navbarLinks'>
             <ul className='listContainer'>
-            <li><a href="about">about</a></li>
-            <li><a href="projects">projects</a></li>
-            <li><a href="contact">contact</a></li>              
+            <li><a id='about' className='inactive' href="#about">about</a></li>
+            <li><a id='projects' className='inactive' href="#projects">projects</a></li>
+            <li><a id='contact' className='inactive' href="#contact">contact</a></li>              
             </ul>
         </div>
 
