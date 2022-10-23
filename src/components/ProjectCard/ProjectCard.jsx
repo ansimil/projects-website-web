@@ -1,10 +1,26 @@
 import './ProjectCard.css'
-import React from 'react'
 import projects from '../../projects.json'
+import { useInView } from 'react-intersection-observer'
+import { useEffect } from 'react'
 
-const ProjectCard = () => {
+
+const ProjectCard = ({setProjectsInView}) => {
+    const { ref, inView } = useInView({
+        threshold: 0.1
+      })
+     useEffect (()=> {
+        console.log(ref)
+        if (inView){
+            setProjectsInView(true)
+        }
+        else {
+            setProjectsInView(false) 
+        }
+        // eslint-disable-next-line
+     }, [inView, setProjectsInView])
+     
   return (
-        <section id='projects' className='projectCardContainer'>
+        <section ref={ref} id='projects' className='projectCardContainer'>
             <div>
                 <h1>projects</h1>
             </div>
