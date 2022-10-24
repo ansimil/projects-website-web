@@ -6,18 +6,24 @@
     justify-content: flex-start;
     width: 100vw;
     min-height: 100vh;
+    background-color: rgb(211, 230, 249);
 }
 
 .projectCardContainer h1 {
+    margin-top: 5vh;
     font-size: 5rem;
 }
 
-.projectInnerContainer {
+.projectInnerContainer { 
+    position: relative; 
+    right: 10vw;
     width: 90%;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    gap: 2rem
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2rem;
+    opacity: 0;
+    transition: 1000ms
 }
 
 .projectContainer {
@@ -29,6 +35,43 @@
     margin-top: 5vh;
     margin-bottom: 5vh;
     padding: 1em;
-    background-color: white;
-    flex-grow: 1;
+    /* background-color: white; */
+    max-width: 28%;
+    min-width: 28%;
+    row-gap: 1rem;
+    border: solid black 2px;
+}
+
+.projectContainer:hover {
+    background-color: rgb(217, 236, 252);
+}
+
+.projectContainer p {
+    text-align: center;
+}
+
+.projectsHeader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 2rem;
+    margin-top: 10vh
+}
+
+.projectContainer a {
+    border: solid black 1px;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    text-decoration: none;
+    color: black;
+    font-family: mainFont;
+     background-color: white;
+}
+
+.projectContainer a:hover {
+    background-color: rgb(253, 222, 227);
+}
+
+.projectsInView > .projectInnerContainer {
+    right: 0vw;
+    opacity: 1;
 }

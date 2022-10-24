@@ -1,7 +1,69 @@
 .aboutContainer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     height: 100vh;
     width: 100vw;
     text-align: center;
     flex-grow: 1;
-    background-color: rgb(178, 215, 254);
+    column-gap: 500px;
+    /* background-color: rgb(178, 215, 254); */
+    background-color: white;
+    border: black solid 1px;
+    opacity: 0;
+    transition: 2000ms
+}
+
+.aboutLeftDiv, .aboutRightDiv {
+    position: relative;
+    top: 5vh;
+    flex-grow: 1;
+    max-width: 45%;
+    height: 75%;
+    /* column-gap: 10px */
+}
+
+.aboutLeftDiv {
+    background-color: white;
+    text-align: center;
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: center;
+    column-gap: 2rem;
+}
+
+
+
+.aboutRightDiv {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: black solid 1px;
+}
+
+.aboutRightDiv p {
+    font-size: 1.5rem;
+    width: 80%;
+}
+
+.aboutRightDiv > h1 {
+    font-size: 3rem;
+}
+
+.aboutMeHeader {
+    font-size: 5rem;
+    padding: 0;
+    margin: 0
+}
+
+.aboutIcon {
+    width: 100px
+}
+
+.aboutInView {
+    column-gap: 0vw;
+    opacity: 1
 }

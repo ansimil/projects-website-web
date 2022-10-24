@@ -8,7 +8,6 @@ const Contact = ({setContactInView}) => {
     threshold: 0.1
   })
  useEffect (()=> {
-    console.log(ref)
     if (inView){
       setContactInView(true)
     }

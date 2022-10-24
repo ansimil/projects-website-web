@@ -1,18 +1,21 @@
 [{
     "title": "MDI Modular",
     "img": "https://res.cloudinary.com/dpkg7rmxr/image/upload/v1666105840/Projects/Screen_Shot_2022-10-18_at_5.07.17_pm_wt34ap.png",
-    "description": "description",
-    "link": "link"
+    "description": "This was my final project at Ironhack. I built a website to showcase and sell sythnesizers that I build in my spare time. The goal was to have a fully functoning e-commerce store including an integrated payment API",
+    "link": "https://mdi-modular.netlify.app/",
+    "gitLink": "hello"
 },
 {
     "title": "Re-Co Market",
     "img": "https://res.cloudinary.com/dpkg7rmxr/image/upload/v1666105842/Projects/Screen_Shot_2022-10-18_at_5.09.01_pm_fef5qd.png",
-    "description": "description2",
-    "link": "link"
+    "description": "Re-Co Market was a project I completed with a fellow student. We wanted to use an external API (in this case we used Discogs) and also use a map integration. The result being a website for users to search for and catalgoue their vinyl records, as well as find other users in who are near by that might be selling records they're interested in.",
+    "link": "https://re-co-market.cyclic.app/",
+    "gitLink": "hello"
 },
 {
     "title": "Fly Swatter",
     "img": "https://res.cloudinary.com/dpkg7rmxr/image/upload/v1666105835/Projects/Screen_Shot_2022-10-18_at_5.07.50_pm_l2d6cx.png",
-    "description": "description3",
-    "link": "link"
+    "description": "My first project at Ironhack was to create a video game. I chose to do a remake of the Mario Paint mini-game 'Fly Swatter'. It was made prodominantly using the p5 library.",
+    "link": "https://ansimil.github.io/FlySwatter/",
+    "gitLink": "https://github.com/ansimil/FlySwatter"
 }]

@@ -5,11 +5,10 @@ import { useEffect } from 'react'
 
 
 const ProjectCard = ({setProjectsInView}) => {
-    const { ref, inView } = useInView({
+    const { ref, inView, entries } = useInView({
         threshold: 0.1
       })
      useEffect (()=> {
-        console.log(ref)
         if (inView){
             setProjectsInView(true)
         }
@@ -21,7 +20,8 @@ const ProjectCard = ({setProjectsInView}) => {
      
   return (
         <section ref={ref} id='projects' className='projectCardContainer'>
-            <div>
+            <div className='projectsHeader'>
+                <img src="./projects-icon.png" alt="projects-icon" width="100px"/>
                 <h1>projects</h1>
             </div>
             <div className='projectInnerContainer'>
@@ -31,7 +31,8 @@ const ProjectCard = ({setProjectsInView}) => {
                         <h3>{project.title}</h3>
                         <img src={project.img} alt="Project pic" height='200px' />
                         <p>{project.description}</p>
-                        <p>{project.link}</p>
+                        <a href={project.link}>Visit site</a>
+                        <a href={project.gitLink}>Github</a>
                         </div>
                     ) 
                 })}

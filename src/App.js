@@ -15,22 +15,29 @@ function App() {
   const location = useLocation()
   useEffect(() => {
     if (!aboutInView) {
-      console.log('not about')
       document.getElementById('navbar').classList.add('inView')
+      document.getElementById('about').classList.remove('aboutInView')
     }
     else {
       document.getElementById('navbar').classList.remove('inView')
+      document.getElementById('about').classList.add('aboutInView')
+
     }
 
+    if (projectsInView) {
+      document.getElementById('projects').classList.add('projectsInView')
+    }
+    else {
+      document.getElementById('projects').classList.remove('projectsInView')
+    }
+ 
     if (projectsInView && !aboutInView){
-      console.log('projects')
       document.getElementById('projectsNav').classList.replace('inactive', 'active')
       document.getElementById('aboutNav').classList.replace('active', 'inactive')
       document.getElementById('contactNav').classList.replace('active', 'inactive')
     }
 
     else if (aboutInView){
-      console.log('about')
       document.getElementById('projectsNav').classList.replace('active', 'inactive')
       document.getElementById('aboutNav').classList.replace('inactive', 'active')
       document.getElementById('contactNav').classList.replace('active', 'inactive')

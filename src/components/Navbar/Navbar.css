@@ -12,7 +12,8 @@
     max-height: 5rem;
     width: 100vw;
     box-shadow: rgb(0, 0, 0) 0px 0px 10px 0px;
-    background-color: rgb(178, 215, 254);
+    background-color: rgb(211, 230, 249);
+    /* background-color: white; */
     transition: 0.5s;
 }
 
