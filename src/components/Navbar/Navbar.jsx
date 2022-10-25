@@ -1,8 +1,14 @@
 import './Navbar.css'
 import React from 'react'
 
-const Navbar = () => {
+const Navbar = ({projectsRef}) => {
 
+  const scrollToSection = (ref) => {
+    window.scrollTo({
+      top: ref.current.offsetTop,
+      behavior: 'smooth'
+    })
+  }
 
   return (
     <nav id='navbar' className='navbarContainer'>
@@ -14,7 +20,7 @@ const Navbar = () => {
         <div className='navbarLinks'>
             <ul className='listContainer'>
             <li><a id='aboutNav' className='inactive' href="#about">about</a></li>
-            <li><a id='projectsNav' className='inactive' href="#projects">projects</a></li>
+            <li><h3 onClick={() => {scrollToSection(projectsRef)}} id='projectsNav' className='inactive'>projects</h3></li>
             <li><a id='contactNav' className='inactive' href="#contact">contact</a></li>              
             </ul>
         </div>

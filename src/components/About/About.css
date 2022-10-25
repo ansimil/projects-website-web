@@ -6,7 +6,7 @@
     width: 100vw;
     text-align: center;
     flex-grow: 1;
-    column-gap: 500px;
+    column-gap: 100px;
     /* background-color: rgb(178, 215, 254); */
     background-color: white;
     border: black solid 1px;
@@ -66,4 +66,16 @@
 .aboutInView {
     column-gap: 0vw;
     opacity: 1
+}
+
+.aboutDownArrow {
+    cursor: pointer;
+}
+
+.aboutDownArrow:hover {
+    position: relative;
+    bottom: 3px;
+    background-color: rgb(253, 222, 227);
+    border-radius: 13px;
+    box-shadow: 0.5px 0.5px 1px;
 }

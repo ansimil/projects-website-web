@@ -5,10 +5,18 @@ import { useEffect } from 'react'
 
 
 
-const About = ({setAboutInView}) => {
+const About = ({setAboutInView, projectsRef}) => {
   const { ref, inView } = useInView({
     threshold: 0.1
   })
+
+  const scrollToSection = (ref) => {
+    window.scrollTo({
+      top: ref.current.offsetTop,
+      behavior: 'smooth'
+    })
+  }
+
  useEffect (()=> {
     if (inView){
         setAboutInView(true)
@@ -29,6 +37,7 @@ const About = ({setAboutInView}) => {
         <h1>Hi, I'm Andrew.</h1>
         <p>I recently completed the full-stack web dev bootcamp at Ironhack in Berlin and am now looking to move into the field. I wanted to share some of my projects with you.</p>
         <p>Take a look around.</p>
+        <img className='aboutDownArrow' onClick={()=>{scrollToSection(projectsRef)}} src="./downarrow-icon2.png" alt="hello" width='50px' />
       </div>
     </section>
   )

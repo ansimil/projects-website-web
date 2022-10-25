@@ -12,6 +12,7 @@ function App() {
   const [aboutInView, setAboutInView] = useState(false)
   const [projectsInView, setProjectsInView] = useState(false)
   const [contactInView, setContactInView] = useState(false)
+  const [projectsRef, setProjectsRef] = useState(null)
   const location = useLocation()
   useEffect(() => {
     if (!aboutInView) {
@@ -57,9 +58,9 @@ function App() {
 
   return (
     <div className='App'>
-      <Navbar/>
-      <About setAboutInView={setAboutInView}/>
-      <ProjectCard setProjectsInView={setProjectsInView}/>
+      <Navbar projectsRef={projectsRef}/>
+      <About setAboutInView={setAboutInView} projectsRef={projectsRef}/>
+      <ProjectCard setProjectsInView={setProjectsInView} setProjectsRef={setProjectsRef}/>
       <Contact setContactInView={setContactInView}/>
     </div>
   );
