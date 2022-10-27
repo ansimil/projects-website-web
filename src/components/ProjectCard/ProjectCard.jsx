@@ -41,11 +41,11 @@ const ProjectCard = ({setProjectsInView, setProjectsRef}) => {
                 {projects.map((project, i) => {
                     return (
                         <div className='projectContainer' key={i}>
-                        <h2>{project.title}</h2>
-                        <img src={project.img} alt="Project pic" height='200px' />
-                        <p>{project.description}</p>
-                        <a href={project.link}>Visit site</a>
-                        <a href={project.gitLink}>Github</a>
+                            <h2>{project.title}</h2>
+                            <img src={project.img} alt="Project pic" height='200px' />
+                            <p>{project.description}</p>
+                            <a href={project.link} target="_blank" rel="noopener noreferrer">Visit site</a>
+                            <a href={project.gitLink} target="_blank" rel="noopener noreferrer">Github</a>
                         </div>
                     ) 
                 })}

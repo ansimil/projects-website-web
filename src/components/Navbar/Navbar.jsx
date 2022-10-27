@@ -1,7 +1,7 @@
 import './Navbar.css'
 import React from 'react'
 
-const Navbar = ({projectsRef}) => {
+const Navbar = ({projectsRef, aboutRef}) => {
 
   const scrollToSection = (ref) => {
     window.scrollTo({
@@ -19,7 +19,7 @@ const Navbar = ({projectsRef}) => {
 
         <div className='navbarLinks'>
             <ul className='listContainer'>
-            <li><a id='aboutNav' className='inactive' href="#about">about</a></li>
+            <li><h3 onClick={() => {scrollToSection(aboutRef)}} id='aboutNav' className='inactive'>about</h3></li>
             <li><h3 onClick={() => {scrollToSection(projectsRef)}} id='projectsNav' className='inactive'>projects</h3></li>
             <li><a id='contactNav' className='inactive' href="#contact">contact</a></li>              
             </ul>

@@ -1,14 +1,26 @@
 import './About.css'
 import React from 'react'
 import { useInView } from 'react-intersection-observer'
-import { useEffect } from 'react'
+import { useEffect, useRef, useCallback } from 'react'
 
 
 
-const About = ({setAboutInView, projectsRef}) => {
-  const { ref, inView } = useInView({
+const About = ({setAboutInView, projectsRef, setAboutRef}) => {
+  const ref = useRef();
+  const { ref: inViewRef, inView } = useInView({
     threshold: 0.1
   })
+
+  const setRefs = useCallback(
+    (node) => {
+        // Ref's from useRef needs to have the node assigned to `current`
+        ref.current = node;
+        // Callback refs, like the one from `useInView`, is a function that takes the node as an argument
+        inViewRef(node);
+        setAboutRef(ref)
+    },
+    [inViewRef],
+    );
 
   const scrollToSection = (ref) => {
     window.scrollTo({
@@ -28,7 +40,7 @@ const About = ({setAboutInView, projectsRef}) => {
  }, [inView, setAboutInView])
 
   return (
-    <section ref={ref} id="about" className='aboutContainer'>
+    <section ref={setRefs} id="about" className='aboutContainer'>
       <div className='aboutLeftDiv'>
         <img className='aboutIcon' src="./about-icon.png" alt="hello" />
         <h1 className='aboutMeHeader'>about</h1>
