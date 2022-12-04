@@ -63,7 +63,7 @@ function App() {
       <Navbar projectsRef={projectsRef} aboutRef={aboutRef} contactRef={contactRef}/>
       <About setAboutInView={setAboutInView} setAboutRef={setAboutRef} projectsRef={projectsRef}/>
       <ProjectCard setProjectsInView={setProjectsInView} setProjectsRef={setProjectsRef}/>
-      <Contact setContactInView={setContactInView} setContactRef={setContactRef}/>
+      <Contact setContactInView={setContactInView} setContactRef={setContactRef} aboutRef={aboutRef}/>
     </div>
   );
 }
