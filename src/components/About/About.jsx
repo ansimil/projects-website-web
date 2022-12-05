@@ -13,9 +13,7 @@ const About = ({setAboutInView, projectsRef, setAboutRef}) => {
 
   const setRefs = useCallback(
     (node) => {
-        // Ref's from useRef needs to have the node assigned to `current`
         ref.current = node;
-        // Callback refs, like the one from `useInView`, is a function that takes the node as an argument
         inViewRef(node);
         setAboutRef(ref)
     },

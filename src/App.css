@@ -3,14 +3,8 @@
   src: url('../public/louis_george_caf/Louis\ George\ Cafe.ttf');
 }
 
-/* @font-face {
-  font-family: mainFontBold;
-  src: url('../public/comfortaa/Comfortaa-Bold.ttf');
-} */
-
 .App {
   position: relative;
-  /* top: 5rem; */
   min-height: 100vh;
   display: flex;
   flex-direction: column;

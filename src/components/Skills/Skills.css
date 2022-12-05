@@ -1,0 +1,104 @@
+.skillsContainer {
+    flex-grow: 1;
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(100, 174, 254);
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 100px;
+    opacity: 0;
+    transition: 2000ms
+}
+
+.skillsContainer h1 {
+    font-size: 5rem;
+    font-family: mainFont;
+}
+
+.languagesDiv {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 5vh;
+}
+
+.librariesDiv {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 5vh;
+}
+
+.languagesInnerDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    column-gap: 5vw;
+}
+
+.librariesInnerDiv {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    column-gap: 2vw;
+}
+
+.rightSkillsDiv {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    column-gap: 1rem;
+}
+
+.rightSkillsDiv, .leftSkillsDiv {
+    position: relative;
+    top: 5vh;
+    flex-grow: 1;
+    max-width: 45%;
+    height: 75%;
+}
+
+.skillsDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.scrollToTopDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.leftSkillsDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 10vh;
+    padding: 20px;
+    width: 50%;
+}
+
+.skillsIcon {
+    width: 100px;
+}
+
+.librariesIcon {
+    min-width: 20%;
+}
+
+.skillsInView {
+    opacity: 1
+}
