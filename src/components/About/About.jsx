@@ -17,6 +17,7 @@ const About = ({setAboutInView, projectsRef, setAboutRef}) => {
         inViewRef(node);
         setAboutRef(ref)
     },
+    // eslint-disable-next-line
     [inViewRef],
     );
 

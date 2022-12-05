@@ -38,12 +38,31 @@
     height: 100%
 }
 
+.mobileNavbarLinks {
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mobileListContainer {
+    padding-left: 0px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+    top: 8.5rem;
+    background-color: rgb(255, 255, 255);
+}
+
 .navbarLinks li {
     text-align: center;
     flex-grow: 1;
 }
 
-.navbarLinks a {
+.navbarLinks a, .mobileListContainer a {
     font-size: 1.25rem;
     text-decoration: none;
     color: black;
@@ -52,13 +71,20 @@
     width: auto;
     display: inline-block;
     position: relative;
-
 }
 
 .navbarLinks h3 {
     cursor: pointer;
     margin: 0px;
     padding: 0px
+}
+
+.mobileListContainer h3 {
+    cursor: pointer;
+}
+
+.mobileListContainer h3:hover {
+    background-color: rgb(253, 222, 227);
 }
 
 .navbarLinks a::before {
@@ -86,7 +112,7 @@
     background-color: rgb(253, 222, 227);
 } 
 
-.listContainer {
+.listContainer, .mobileListContainer {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -97,4 +123,27 @@
 
 .inView {
     background-color: white;
+}
+
+@media screen and (min-width: 480px) {
+    .mobileNavbarLinks {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .navbarLinks {
+        display: none;
+    }
+    .navbarHeader {
+        display: none;
+    }
+}
+
+.hamburgerIcon, .closeIcon {
+    cursor: pointer;
+}
+
+.closeIcon {
+    font-size: 3rem;
 }
