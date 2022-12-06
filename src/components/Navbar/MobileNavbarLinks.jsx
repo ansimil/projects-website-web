@@ -1,6 +1,5 @@
 import {useState} from 'react'
 import {RxHamburgerMenu} from 'react-icons/rx'
-import {RxCross2} from 'react-icons/rx'
 
 
 const MobileNavbarLinks = ({projectsRef, aboutRef, skillsRef, contactRef}) => {
@@ -18,7 +17,6 @@ const MobileNavbarLinks = ({projectsRef, aboutRef, skillsRef, contactRef}) => {
         <div className='mobileNavbarLinks'>
                 <div>
                 {!open && <RxHamburgerMenu onClick={() => setOpen(true)} className='hamburgerIcon' size="40px" color="black"/>}
-                {/* {open && <RxCross2 onClick={() => setOpen(false)} className='closeIcon' size="40px" color="black"/>} */}
                 </div>
                 {open && 
                 <ul className='mobileListContainer'>

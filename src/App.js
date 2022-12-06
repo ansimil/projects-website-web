@@ -38,7 +38,7 @@ function App() {
       document.getElementById('projects').classList.remove('projectsInView')
     }
 
-    if (skillsInView) {
+    if (skillsInView || contactInView) {
       document.getElementById('skills').classList.add('skillsInView')
     }
     else {
@@ -87,7 +87,7 @@ function App() {
       <About setAboutInView={setAboutInView} setAboutRef={setAboutRef} projectsRef={projectsRef}/>
       <ProjectCard setProjectsInView={setProjectsInView} setProjectsRef={setProjectsRef}/>
       <Skills setSkillsInView={setSkillsInView} setSkillsRef={setSkillsRef} aboutRef={aboutRef}/>
-      <Contact setContactRef={setContactRef} setContactInView={setContactInView} />
+      <Contact setContactRef={setContactRef} setContactInView={setContactInView} aboutRef={aboutRef} />
     </div>
   );
 }

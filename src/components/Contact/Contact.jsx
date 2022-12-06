@@ -3,7 +3,8 @@ import "./Contact.css"
 import { useInView } from 'react-intersection-observer'
 import { useEffect, useRef, useCallback } from 'react'
 
-const Contact = ({setContactRef, setContactInView}) => {
+
+const Contact = ({setContactRef, setContactInView, aboutRef}) => {
     const width = "40px"
     const ref = useRef();
     const { ref: inViewRef, inView } = useInView({
@@ -18,12 +19,19 @@ const Contact = ({setContactRef, setContactInView}) => {
     [inViewRef, setContactRef],
     );
 
+    const scrollToSection = (ref) => {
+        window.scrollTo({
+          top: ref.current.offsetTop,
+          behavior: 'smooth'
+        })
+      }
+
     useEffect (()=> {
         if (inView){
             setContactInView(true)
         }
         else {
-            setContactInView(false) 
+            setContactInView(false)
         }
         // eslint-disable-next-line
      }, [inView, setContactInView])
@@ -47,6 +55,9 @@ const Contact = ({setContactRef, setContactInView}) => {
                 <img src="./linkedin-icon.png" alt="hello" width="50px" />
             </a>
             
+        </li>
+        <li className="toTopContacts">
+            <img className='aboutDownArrow' onClick={()=>{scrollToSection(aboutRef)}} src="./uparrow-icon.png" alt="hello" width='40px' />
         </li>
     </ul>
     </div>

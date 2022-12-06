@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
     width: 100vw;
     text-align: center;
     flex-grow: 1;
@@ -67,6 +67,7 @@
 
 .aboutDownArrow {
     cursor: pointer;
+    margin-bottom: 5%
 }
 
 .aboutDownArrow:hover {
@@ -84,5 +85,26 @@
 
     .aboutRightDiv {
         max-width: 90%;
+        margin-top: 5%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .aboutContainer {
+        margin-top: 10%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        padding-bottom: 10%;
+    }
+
+    .aboutLeftDiv {
+        margin-top: 10%;
+        margin-bottom: 10%;
+    }
+
+    .aboutRightDiv {
+        min-width: 90%;
+        padding-bottom: 5%;
     }
 }

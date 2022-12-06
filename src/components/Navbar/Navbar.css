@@ -147,3 +147,10 @@
 .closeIcon {
     font-size: 3rem;
 }
+
+@media screen and (max-width: 700px) {
+    .listContainer {
+        flex-grow: 3;
+        padding-left: 0px;
+    }
+}

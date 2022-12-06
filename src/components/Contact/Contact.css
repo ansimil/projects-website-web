@@ -1,6 +1,7 @@
 .contactContainer {
     width: 100%;
-    min-height: 10vh;    
+    min-height: 10vh; 
+      
 }
 
 .contactList {
@@ -9,10 +10,11 @@
     align-items: center;
     list-style: none;
     text-decoration: none;
+    padding-left: 0; 
 }
 
-@media screen and (max-width: 480px) {
-    .contactList {
-        padding-left: 0;
+@media screen and (min-width: 701px) {
+    .toTopContacts {
+        display: none;
     }
 }

@@ -2,14 +2,13 @@
     flex-grow: 1;
     height: 100vh;
     width: 100%;
-    background-color: rgb(100, 174, 254);
     margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     column-gap: 100px;
-    opacity: 0;
-    transition: 2000ms
+    border-bottom: black solid 1px;
+    background-color: rgb(100, 174, 254);
 }
 
 .skillsContainer h1 {
@@ -66,6 +65,8 @@
     flex-grow: 1;
     max-width: 45%;
     height: 75%;
+    opacity: 0;
+    transition: 2000ms;
 }
 
 .skillsDiv {
@@ -99,7 +100,11 @@
     min-width: 20%;
 }
 
-.skillsInView {
+.skillsInView .leftSkillsDiv {
+    opacity: 1
+}
+
+.skillsInView .rightSkillsDiv {
     opacity: 1
 }
 
@@ -116,6 +121,7 @@
 
     .leftSkillsDiv {
         min-width: 100%;
+        margin-top: 5%;
     }
 
     .librariesInnerDiv {
@@ -131,4 +137,37 @@
     .scrollToTopDiv p {
         display: none;
     }
+
+    .skillsContainer {
+        transition: 1000ms;
+    }
 }
+
+@media screen and (max-width: 700px) {
+    .skillsContainer {
+        flex-direction:column-reverse;
+        align-items: center;
+        justify-content:center;
+        height: fit-content;
+    }
+
+    .librariesInnerDiv {
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        column-gap: 2vw;
+        padding-bottom: 5%;
+        /* flex-wrap: wrap; */
+    }
+    
+    .leftSkillsDiv {
+        min-width: 100%
+    }
+
+    .scrollToTopDiv {
+        display: none;
+    }
+}
+

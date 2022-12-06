@@ -3,14 +3,14 @@
     "img": "https://res.cloudinary.com/dpkg7rmxr/image/upload/v1666105840/Projects/Screen_Shot_2022-10-18_at_5.07.17_pm_wt34ap.png",
     "description": "This was my final project at Ironhack. I built a website to showcase and sell sythnesizers that I build in my spare time. The goal was to have a fully functoning e-commerce store including an integrated payment API",
     "link": "https://mdi-modular.netlify.app/",
-    "gitLink": "hello"
+    "gitLink": "https://github.com/ansimil/final-project"
 },
 {
     "title": "Re-Co Market",
     "img": "https://res.cloudinary.com/dpkg7rmxr/image/upload/v1666105842/Projects/Screen_Shot_2022-10-18_at_5.09.01_pm_fef5qd.png",
     "description": "Re-Co Market was a project I completed with a fellow student. We wanted to use an external API (in this case we used Discogs) and also use a map integration. The result being a website for users to search for and catalgoue their vinyl records, as well as find other users in who are near by that might be selling records they're interested in.",
     "link": "https://re-co-market.cyclic.app/",
-    "gitLink": "hello"
+    "gitLink": "https://github.com/joand-proj/joand-proj"
 },
 {
     "title": "Fly Swatter",
