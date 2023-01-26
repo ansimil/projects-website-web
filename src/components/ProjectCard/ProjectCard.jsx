@@ -39,8 +39,12 @@ const ProjectCard = ({setProjectsInView, setProjectsRef}) => {
                     return (
                         <div className='projectContainer' key={i}>
                             <h2>{project.title}</h2>
-                            <img src={project.img} alt="Project pic" />
-                            <p>{project.description}</p>
+                            <img className="projectImg" src={project.img} alt="Project pic" />
+                            <details className='detailsContainer'>
+                                <summary className='detailsSummary'>Details</summary>
+                                <p>{project.description}</p>
+                            </details>
+                            {/* <p>{project.description}</p> */}
                             <a href={project.link} target="_blank" rel="noopener noreferrer">Visit site</a>
                             <a href={project.gitLink} target="_blank" rel="noopener noreferrer">Github</a>
                         </div>

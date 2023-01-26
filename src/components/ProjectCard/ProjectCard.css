@@ -23,7 +23,8 @@
     align-items: flex-start;
     gap: 2rem;
     opacity: 0;
-    transition: 1000ms
+    transition: 1000ms;
+    flex-wrap:wrap;
 }
 
 .projectContainer {
@@ -34,8 +35,8 @@
     margin-top: 5vh;
     margin-bottom: 5vh;
     padding: 1em 2em 1em 2em;
-    max-width: 28%;
-    min-width: 28%;
+    max-width: 25%;
+    min-width: 25%;
     row-gap: 1rem;
     border: solid black 2px;
 }
@@ -63,9 +64,11 @@
     color: black;
     font-family: mainFont;
     background-color: white;
+    min-width: 10vw;
+    text-align: center;
 }
 
-.projectContainer a:hover {
+.projectContainer a:hover, .detailsSummary:hover {
     background-color: rgb(253, 222, 227);
 }
 
@@ -75,7 +78,28 @@
 }
 
 .projectContainer img {
-    width: 70% 
+    margin-bottom: 3vh;
+    max-height: 20vh;
+    height: 20vh
+}
+
+
+.detailsSummary {
+    border: black solid 1px;
+    background-color: white;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    text-align: center;
+    list-style: none;
+    min-width: 10vw;
+    cursor: pointer;
+}
+
+.detailsSummary::after {
+    content: " ↓"
+}
+
+details[open] .detailsSummary::after {
+    content: " ↑"
 }
 
 @media screen and (max-width: 480px) {
@@ -98,6 +122,12 @@
     }
 }
 
+@media screen and (width <= 1200px) {
+    .projectContainer {
+        min-width: 35%;
+    }
+}
+
 @media screen and (max-width: 700px) {
     .projectInnerContainer {
         flex-direction: column;
@@ -110,5 +140,13 @@
         padding-top: 0;
         margin-bottom: 0;
         min-width: 82.5%
+    }
+
+    .projectContainer a {
+        min-width: 15vw
+    }
+
+    .detailsSummary {
+        min-width: 15vw;
     }
 }
