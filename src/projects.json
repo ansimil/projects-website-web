@@ -1,4 +1,12 @@
-[{
+[
+{
+    "title": "Pokie Free Pubs",
+    "img": "https://res.cloudinary.com/dpkg7rmxr/image/upload/v1674622618/Projects/Screen_Shot_2023-01-25_at_3.52.49_pm_y0kdrz.png",
+    "description": "Pokie Free Pubs is map-website showcasing all of the pubs and clubs in Australia that don't have any pokies. I wanted to highlight places that people with gambling addictions can go whilst still getting that great pub atmosphere. ",
+    "link": "https://pokiefreepubs.netlify.app/",
+    "gitLink": "https://github.com/ansimil/pokie-free-map"
+},
+{
     "title": "MDI Modular",
     "img": "https://res.cloudinary.com/dpkg7rmxr/image/upload/v1666105840/Projects/Screen_Shot_2022-10-18_at_5.07.17_pm_wt34ap.png",
     "description": "This was my final project at Ironhack. I built a website to showcase and sell sythnesizers that I build in my spare time. The goal was to have a fully functoning e-commerce store including an integrated payment API",
@@ -18,4 +26,5 @@
     "description": "My first project at Ironhack was to create a video game. I chose to do a remake of the Mario Paint mini-game 'Fly Swatter'. It was made prodominantly using the p5 library.",
     "link": "https://ansimil.github.io/FlySwatter/",
     "gitLink": "https://github.com/ansimil/FlySwatter"
-}]
+}
+]
