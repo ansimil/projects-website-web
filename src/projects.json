@@ -23,7 +23,7 @@
 {
     "title": "Fly Swatter",
     "img": "https://res.cloudinary.com/dpkg7rmxr/image/upload/v1666105835/Projects/Screen_Shot_2022-10-18_at_5.07.50_pm_l2d6cx.png",
-    "description": "My first project at Ironhack was to create a video game. I chose to do a remake of the Mario Paint mini-game 'Fly Swatter'. It was made prodominantly using the p5 library.",
+    "description": "My first project at Ironhack was to create a video game. I chose to do a remake of the Mario Paint mini-game 'Fly Swatter'. It was made predominantly using the p5 library.",
     "link": "https://ansimil.github.io/FlySwatter/",
     "gitLink": "https://github.com/ansimil/FlySwatter"
 }
