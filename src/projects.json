@@ -2,7 +2,7 @@
 {
     "title": "Modular Monosynth",
     "img": "https://res.cloudinary.com/dpkg7rmxr/image/upload/v1676954385/Projects/Screen_Shot_2023-02-21_at_3.38.39_pm_wdghg6.png",
-    "description": "The Modular Monosynth web app is a project that is inspired by my passion for modular synthesizers (I design and build my own hardware synths). I wanted to code a web app that could also be a fun synthesizer to play music with. The main library used in Tone.js which uses the Web Audio API.",
+    "description": "The Modular Monosynth web app is a project that is inspired by my passion for modular synthesizers (I design and build my own hardware synths). I wanted to code a web app that could also be a fun synthesizer to play music with. The main library used is Tone.js which build on the Web Audio API.",
     "link": "https://modular-monosynth.netlify.app/",
     "gitLink": "https://github.com/ansimil/react-modular"
 },
