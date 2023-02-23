@@ -38,15 +38,29 @@ const ProjectCard = ({setProjectsInView, setProjectsRef}) => {
                 {projects.map((project, i) => {
                     return (
                         <div className='projectContainer' key={i}>
+                            <div className="imgContainer">
+                                <img 
+                                className="projectImg" 
+                                src={project.img} 
+                                alt="Project pic" 
+                                onClick={()=>{
+                                    window.open(project.link, '_blank', 'noreferrer')
+                                }}
+                                />
+                            </div>
                             <h2>{project.title}</h2>
-                            <img className="projectImg" src={project.img} alt="Project pic" />
-                            <details className='detailsContainer'>
-                                <summary className='detailsSummary'>Details</summary>
-                                <p>{project.description}</p>
-                            </details>
-                            {/* <p>{project.description}</p> */}
-                            <a href={project.link} target="_blank" rel="noopener noreferrer">Visit site</a>
-                            <a href={project.gitLink} target="_blank" rel="noopener noreferrer">Github</a>
+                            <div className="projectInfoContainer">
+                                <details className='detailsContainer'>
+                                    <summary className='detailsSummary'>
+                                        <p>Details</p>
+                                    </summary>
+                                    <p>{project.description}</p>
+                                </details>
+                                <div className="linksContainer">
+                                <a href={project.link} target="_blank" rel="noopener noreferrer">Visit site</a>
+                                <a href={project.gitLink} target="_blank" rel="noopener noreferrer">Github</a>
+                                </div>
+                            </div>
                         </div>
                     ) 
                 })}

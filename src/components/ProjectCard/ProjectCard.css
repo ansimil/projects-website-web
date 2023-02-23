@@ -34,15 +34,17 @@
     align-items: center;
     margin-top: 5vh;
     margin-bottom: 5vh;
-    padding: 1em 2em 1em 2em;
-    max-width: 25%;
-    min-width: 25%;
+    max-width: 500px;
+    width: 25vw;
+    min-width: 350px;
     row-gap: 1rem;
-    border: solid black 2px;
+    border-radius: 0.3rem;
+    overflow: hidden;
+    background-color: hsl(208, 76%, 95%);
 }
 
 .projectContainer:hover {
-    background-color: rgb(217, 236, 252);
+    background-color: rgb(191, 224, 251);
 }
 
 .projectContainer p {
@@ -58,14 +60,15 @@
 }
 
 .projectContainer a {
-    border: solid black 1px;
+    flex: 1;
+    /* border: solid black 1px; */
     padding: 0.5rem 1rem 0.5rem 1rem;
     text-decoration: none;
     color: black;
     font-family: mainFont;
     background-color: white;
-    min-width: 10vw;
     text-align: center;
+    border-radius: 0.3rem;
 }
 
 .projectContainer a:hover, .detailsSummary:hover {
@@ -77,25 +80,72 @@
     opacity: 1;
 }
 
-.projectContainer img {
-    margin-bottom: 3vh;
-    max-height: 20vh;
-    height: 20vh
+.imgContainer {
+    overflow: hidden;
 }
 
+.imgContainer img {
+    min-height: 200px;
+    max-height: 200px;
+    min-width: 100%;
+    transition: 500ms;
+    cursor: pointer
+}
+
+.projectContainer img:hover {
+    transform: scale(1.1)
+}
+
+.projectInfoContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    padding: 0.5rem
+}
+
+details {
+    width: 90%
+}
 
 .detailsSummary {
-    border: black solid 1px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    /* border: black solid 1px; */
     background-color: white;
     padding: 0.5rem 1rem 0.5rem 1rem;
     text-align: center;
     list-style: none;
-    min-width: 10vw;
+    width: 90%;
     cursor: pointer;
+    font-family: mainFont;
+    transition: ease-in-out;
+    border-radius: 0.3rem;
+}
+
+.detailsSummary p {
+    margin: 0;
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .detailsSummary::after {
-    content: " ↓"
+    content: " ↓";
+    display: flex;
+    justify-content: flex-end;
+    max-width: 0px;
+}
+
+.linksContainer {
+    display: flex;
+    width: 90%;
+    gap: 1rem
 }
 
 details[open] .detailsSummary::after {
@@ -122,11 +172,6 @@ details[open] .detailsSummary::after {
     }
 }
 
-@media screen and (width <= 1200px) {
-    .projectContainer {
-        min-width: 35%;
-    }
-}
 
 @media screen and (max-width: 700px) {
     .projectInnerContainer {
@@ -139,7 +184,6 @@ details[open] .detailsSummary::after {
     .projectContainer {
         padding-top: 0;
         margin-bottom: 0;
-        min-width: 82.5%
     }
 
     .projectContainer a {
