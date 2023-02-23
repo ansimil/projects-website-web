@@ -40,11 +40,7 @@
     row-gap: 1rem;
     border-radius: 0.3rem;
     overflow: hidden;
-    /* border: solid black 0.5px; */
-    /* box-shadow: inset 0px 0px 5px rgba(0,0,0,0.4); */
     background-color: hsl(208, 76%, 95%);
-    /* border-radius: 0.3rem; */
-
 }
 
 .projectContainer:hover {
@@ -65,7 +61,7 @@
 
 .projectContainer a {
     flex: 1;
-    border: solid black 1px;
+    /* border: solid black 1px; */
     padding: 0.5rem 1rem 0.5rem 1rem;
     text-decoration: none;
     color: black;
@@ -119,7 +115,7 @@ details {
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    border: black solid 1px;
+    /* border: black solid 1px; */
     background-color: white;
     padding: 0.5rem 1rem 0.5rem 1rem;
     text-align: center;
@@ -155,10 +151,6 @@ details {
 details[open] .detailsSummary::after {
     content: " ↑"
 }
-
-/* details[open] summary {
-    width: 90%
-} */
 
 @media screen and (max-width: 480px) {
     .projectsHeader {

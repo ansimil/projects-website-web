@@ -39,6 +39,7 @@
     align-items: center;
     justify-content: center;
     border: black solid 1px;
+    border-radius: 0.3rem;
 }
 
 .aboutRightDiv p {
