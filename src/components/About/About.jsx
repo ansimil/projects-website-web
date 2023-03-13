@@ -45,8 +45,8 @@ const About = ({setAboutInView, projectsRef, setAboutRef}) => {
         <h1 className='aboutMeHeader'>about</h1>
       </div>
       <div className='aboutRightDiv'>
-        <h1>Hi, I'm Andrew.</h1>
-        <p>I recently completed the full-stack web dev bootcamp at Ironhack in Berlin and am now looking to move into the field. I wanted to share some of my projects with you.</p>
+        <h1>Hi, I'm Andrew</h1>
+        <p>I'm a full-stack web developer from Australia. I have a passion for technology, music and creating great user experiences.</p>
         <p>Take a look around.</p>
         <img className='aboutDownArrow' onClick={()=>{scrollToSection(projectsRef)}} src="./downarrow-icon2.png" alt="hello" width='50px' />
       </div>

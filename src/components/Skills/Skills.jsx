@@ -79,6 +79,10 @@ const scrollToSection = (ref) => {
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="hello" height={height}/>
               <h5>ReactJS</h5> 
               </div>
+              <div>
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" alt="hello" height={height}/>
+                <h5>Sass</h5>
+              </div>
             </div> 
           </div>
         </div>
