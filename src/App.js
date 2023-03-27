@@ -21,29 +21,24 @@ function App() {
   const location = useLocation()
 
   useEffect(() => {
+    console.log('render')
     if (!aboutInView) {
       document.getElementById('navbar').classList.add('inView')
-      document.getElementById('about').classList.remove('aboutInView')
     }
     else {
       document.getElementById('navbar').classList.remove('inView')
       document.getElementById('about').classList.add('aboutInView')
-
     }
 
     if (projectsInView) {
       document.getElementById('projects').classList.add('projectsInView')
     }
-    else {
-      document.getElementById('projects').classList.remove('projectsInView')
-    }
+    
 
     if (skillsInView || contactInView) {
       document.getElementById('skills').classList.add('skillsInView')
     }
-    else {
-      document.getElementById('skills').classList.remove('skillsInView')
-    }
+    
  
     if (projectsInView && !aboutInView){
       document.getElementById('contactNav').classList.replace('active', 'inactive')
