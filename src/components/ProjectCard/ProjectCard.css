@@ -82,12 +82,12 @@
 
 .imgContainer {
     overflow: hidden;
+    width: 100%;
 }
 
 .imgContainer img {
-    min-height: 200px;
-    max-height: 200px;
-    min-width: 100%;
+    width: 100%;
+    aspect-ratio: 16 / 9;
     transition: 500ms;
     cursor: pointer
 }
