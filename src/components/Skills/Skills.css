@@ -1,6 +1,6 @@
 .skillsContainer {
     flex-grow: 1;
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
     margin: 0;
     display: flex;
@@ -40,16 +40,20 @@
     align-items: center;
     text-align: center;
     column-gap: 5vw;
+    row-gap: 2vh;
+    flex-wrap: wrap;
 }
 
 .librariesInnerDiv {
-    width: 80%;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    column-gap: 2vw;
+    column-gap: 5vw;
+    row-gap: 2vh;
+    flex-wrap: wrap;
 }
+
 
 .rightSkillsDiv {
     display: flex;
@@ -96,10 +100,6 @@
     width: 100px;
 }
 
-.librariesIcon {
-    min-width: 20%;
-}
-
 .skillsInView .leftSkillsDiv {
     opacity: 1
 }
@@ -130,7 +130,7 @@
         justify-content: center;
         align-items: center;
         text-align: center;
-        column-gap: 2vw;
+        column-gap: 5vw;
         flex-wrap: wrap;
     }
 

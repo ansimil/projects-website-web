@@ -40,48 +40,57 @@ const scrollToSection = (ref) => {
     <section ref={ref} id='skills' className='skillsContainer'>
         <div className='leftSkillsDiv'>
           <div className='languagesDiv'>
-            <h2>Languages</h2>
+            <h2>Front-end</h2>
             <div className='languagesInnerDiv'>
               <div>
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="hello" height={height}/>
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" height={height}/>
                 <h5>JavaScript</h5>
               </div>
               <div>
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="hello" height={height}/> 
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS" height={height}/> 
                 <h5>CSS 3</h5>
               </div>
               <div> 
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="hello" height={height}/> 
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML" height={height}/> 
                 <h5>HTML 5</h5>
-              </div>       
-            </div>
-          </div>
-          <div className="librariesDiv">
-            <h2>Libraries, Frameworks etc.</h2>
-            <div className='librariesInnerDiv'>
-              <div className="librariesIcon">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" alt="hello" height={height}/>
-              <h5>Express</h5>
-              </div>
-              <div className="librariesIcon">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/handlebars/handlebars-original.svg" alt="hello" height={height}/>
-              <h5>Handlesbars</h5> 
-              </div>
-              <div className="librariesIcon">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="hello" height={height}/> 
-              <h5>MongoDB</h5>
-              </div>
-              <div className="librariesIcon">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="hello" height={height}/> 
-              <h5>NodeJS</h5>
-              </div>
-              <div className="librariesIcon">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="hello" height={height}/>
+              </div> 
+              <div>
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="REACT" height={height}/>
               <h5>ReactJS</h5> 
               </div>
               <div>
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" alt="hello" height={height}/>
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" alt="SASS" height={height}/>
                 <h5>Sass</h5>
+              </div> 
+              <div>
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/handlebars/handlebars-original.svg" alt="HANDLEBARS" height={height}/>
+              <h5>Handlesbars</h5> 
+              </div>     
+            </div>
+          </div>
+          <div className="librariesDiv">
+            <h2>Back-end</h2>
+            <div className='librariesInnerDiv'>
+              <div className="librariesIcon">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" alt="EXPRESS" height={height}/>
+              <h5>Express</h5>
+              </div>
+              
+              <div className="librariesIcon">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MONGODB" height={height}/> 
+              <h5>MongoDB</h5>
+              </div>
+              <div className="librariesIcon">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="NODEJS" height={height}/> 
+              <h5>NodeJS</h5>
+              </div>
+              <div className="librariesIcon">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/adonisjs/adonisjs-original.svg" alt="ADONIS" height={height}/>
+                <h5>AdonisJS</h5>
+              </div>
+              <div className="librariesIcon">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="POSTGRESQL" height={height}/>
+                <h5>Postgresql</h5>
               </div>
             </div> 
           </div>
