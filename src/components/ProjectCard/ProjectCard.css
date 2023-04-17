@@ -59,9 +59,14 @@
     margin-top: 10vh
 }
 
+.detailsContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .projectContainer a {
     flex: 1;
-    /* border: solid black 1px; */
     padding: 0.5rem 1rem 0.5rem 1rem;
     text-decoration: none;
     color: black;
@@ -115,12 +120,10 @@ details {
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    /* border: black solid 1px; */
     background-color: white;
     padding: 0.5rem 1rem 0.5rem 1rem;
     text-align: center;
     list-style: none;
-    width: 90%;
     cursor: pointer;
     font-family: mainFont;
     transition: ease-in-out;
