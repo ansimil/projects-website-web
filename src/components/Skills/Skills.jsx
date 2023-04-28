@@ -7,7 +7,7 @@ const Skills = ({setSkillsInView, setSkillsRef, aboutRef}) => {
   const height = "40px"
   const ref = useRef();
   const { ref: inViewRef, inView } = useInView({
-    threshold: 0.1
+    threshold: 0.9
   })
 
 const setRefs = useCallback(
@@ -87,6 +87,10 @@ const scrollToSection = (ref) => {
               <div className="librariesIcon">
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/adonisjs/adonisjs-original.svg" alt="ADONIS" height={height}/>
                 <h5>AdonisJS</h5>
+              </div>
+              <div className="librariesIcon">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nestjs/nestjs-plain.svg" alt="NESTJS" height={height} />
+                <h5>NestJS</h5>
               </div>
               <div className="librariesIcon">
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="POSTGRESQL" height={height}/>
